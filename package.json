@@ -1,0 +1,24 @@
+{
+  "name": "fight-corona",
+  "version": "1.0.0",
+  "description": "Browser automation using Playwright to alert you whenever a vaccine shot is available near your specified pincodes",
+  "main": "index.js",
+  "devDependencies": {
+    "play-sound": "^1.1.3",
+    "playwright": "^1.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourav-kundu/fight-corona.git"
+  },
+  "author": "Sourav Kundu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sourav-kundu/fight-corona/issues"
+  },
+  "homepage": "https://github.com/sourav-kundu/fight-corona#readme"
+}
