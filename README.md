@@ -4,7 +4,7 @@ This utility uses browser automation using Playwright to search for available va
 
 ## How to use this utility?
 
-1. You need to [install nodeJS](https://nodejs.org/en/download/){target="_blank"} in your laptop/PC (if not already installed).
+1. You need to [install nodeJS](https://nodejs.org/en/download/){:target="_blank"} in your laptop/PC (if not already installed).
 2. Clone this repository using `git clone https://github.com/sourav-kundu/fight-corona` (if you have git installed). You can also download the code using the download code option in GitHub.
 3. Once you have the code and have installed nodeJS, run `npm install` from within the directory using command prompt / terminal.
 4. The next step is to configure the PINCODE(s) near you where you think you will be able to get vaccinated. You need to edit the file `pincode.json` with your required pincodes.
