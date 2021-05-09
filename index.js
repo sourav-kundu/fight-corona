@@ -17,7 +17,7 @@ let page;
     console.log(serialCount);
     try {
         for( place in pincodes) {
-            await searchVaccineAvailability(page,pincodes[pin],place);
+            await searchVaccineAvailability(page,pincodes[place],place);
             await sleep(5000);
         }
     } catch (error) {
