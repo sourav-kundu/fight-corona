@@ -154,7 +154,7 @@ async function searchVaccineAvailability(page, pincode,place) {
     let cova50 = await page.$('text=10 COVAXIN Age 18+ >> a');
 
     if(covi1 || covi2 || covi3 || covi4 || covi5 || covi6 || covi7 || covi8 || covi9 || covi10 || covi11 || covi12 || covi13 || covi14 || covi15 || covi16 || covi17 || covi18 || covi19 || covi20 || covi21 || covi22 || covi23 || covi24 || covi25 || covi26 || covi27 || covi28 || covi29 || covi30 || covi31 || covi32 || covi33 || covi34 || covi35 || covi36 || covi37 || covi38 || covi39 || covi40 || covi41 || covi42 || covi43 || covi44 || covi45 || covi46 || covi47 || covi48 || covi49 || covi50 ) {
-        console.log("Covishield available in " + place + "pincode - " + pincode);
+        console.log("Covishield available in " + place + " at pincode - " + pincode);
         player.play('foo.mp3', function(err){
             if (err) throw err
         });
