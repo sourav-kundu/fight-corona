@@ -16,8 +16,8 @@ let page;
   while(1) {
     console.log(serialCount);
     try {
-        for( pin in pincodes) {
-            await searchVaccineAvailability(page,pincodes[pin]);
+        for( place in pincodes) {
+            await searchVaccineAvailability(page,pincodes[pin],place);
             await sleep(5000);
         }
     } catch (error) {
@@ -40,7 +40,7 @@ process.once('SIGINT', async function () {
     process.exit(0);
 });
 
-async function searchVaccineAvailability(page, pincode) {
+async function searchVaccineAvailability(page, pincode,place) {
     await page.goto('https://www.cowin.gov.in/home');
     await page.click('[placeholder="Enter your PIN"]');
     await page.fill('[placeholder="Enter your PIN"]', pincode);
@@ -154,13 +154,13 @@ async function searchVaccineAvailability(page, pincode) {
     let cova50 = await page.$('text=10 COVAXIN Age 18+ >> a');
 
     if(covi1 || covi2 || covi3 || covi4 || covi5 || covi6 || covi7 || covi8 || covi9 || covi10 || covi11 || covi12 || covi13 || covi14 || covi15 || covi16 || covi17 || covi18 || covi19 || covi20 || covi21 || covi22 || covi23 || covi24 || covi25 || covi26 || covi27 || covi28 || covi29 || covi30 || covi31 || covi32 || covi33 || covi34 || covi35 || covi36 || covi37 || covi38 || covi39 || covi40 || covi41 || covi42 || covi43 || covi44 || covi45 || covi46 || covi47 || covi48 || covi49 || covi50 ) {
-        console.log(pincode);
+        console.log("Covishield available in " + place + "pincode - " + pincode);
         player.play('foo.mp3', function(err){
             if (err) throw err
         });
     }
     if(cova1 || cova2 || cova3 || cova4 || cova5 || cova6 || cova7 || cova8 || cova9 || cova10 || cova11 || cova12 || cova13 || cova14 || cova15 || cova16 || cova17 || cova18 || cova19 || cova20 || cova21 || cova22 || cova23 || cova24 || cova25 || cova26 || cova27 || cova28 || cova29 || cova30 || cova31 || cova32 || cova33 || cova34 || cova35 || cova36 || cova37 || cova38 || cova39 || cova40 || cova41 || cova42 || cova43 || cova44 || cova45 || cova46 || cova47 || cova48 || cova49 || cova50 ) {
-        console.log(pincode);
+        console.log("Covaxin available in " + place + "pincode - " + pincode);
         player.play('foo.mp3', function(err){
             if (err) throw err
         });
